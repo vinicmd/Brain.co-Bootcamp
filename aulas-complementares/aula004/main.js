@@ -46,3 +46,15 @@ const newPerson = {
 }
 
 console.log('newPerson', newPerson)
+
+const {age, ...personWithOutAge} = personWithBirthYear 
+
+console.log('personWithOutAge: ', personWithOutAge)
+
+//Rest syntax em função
+
+function sum (...args) {
+  return args
+}
+
+console.log('sum: ', sum(1, 2, 3, 4, 5))
