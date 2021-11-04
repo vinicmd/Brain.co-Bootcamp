@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ReactJS</title>
 </head>
 <body>
   <div data-js="container"></div>
@@ -13,7 +13,13 @@
 
   <script>
     const container = document.querySelector('[data-js="container"]')
-    ReactDOM.render('React App', container)
+    const span = React.createElement('span', null, 'Bootcamp React')
+    const h1 = React.createElement(
+      'h1',
+      { id: 'title', 'data-js' : 'titulo-js'},
+      span
+    )
+    ReactDOM.render(h1, container)
   </script>
 </body>
 </html>
