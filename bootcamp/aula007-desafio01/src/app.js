@@ -8,11 +8,9 @@ function App () {
 
   function Menu () {
     return (
-      <ul>
-        <li>Menu</li>
-        <li>Menu</li>
-        <li>Menu</li>
-      </ul>
+      <nav>
+        Menu
+      </nav>
     )
   }
 
@@ -24,7 +22,7 @@ function App () {
   
   function Content () {
     return (
-      <div>Content</div>
+      <section>Content</section>
     )
   }
 
